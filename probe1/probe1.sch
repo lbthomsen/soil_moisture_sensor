@@ -1,4 +1,116 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 61C0C88F
+P 4750 3100
+F 0 "R1" V 4700 2950 50  0000 C CNN
+F 1 "NM" V 4700 3300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4680 3100 50  0001 C CNN
+F 3 "~" H 4750 3100 50  0001 C CNN
+	1    4750 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 61C0D12D
+P 5050 3350
+F 0 "C1" H 5100 3450 50  0000 L CNN
+F 1 "Soil Sensor" H 5100 3250 50  0000 L CNN
+F 2 "soil:soil_sensor_no_trace" H 5088 3200 50  0001 C CNN
+F 3 "~" H 5050 3350 50  0001 C CNN
+	1    5050 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 61C0D75A
+P 5050 3600
+F 0 "#PWR0101" H 5050 3350 50  0001 C CNN
+F 1 "GND" H 5055 3427 50  0000 C CNN
+F 2 "" H 5050 3600 50  0001 C CNN
+F 3 "" H 5050 3600 50  0001 C CNN
+	1    5050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 61C0E709
+P 4000 3100
+F 0 "J1" H 3918 3325 50  0000 C CNN
+F 1 "~" H 3918 3326 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 4000 3100 50  0001 C CNN
+F 3 "~" H 4000 3100 50  0001 C CNN
+	1    4000 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 61C10356
+P 4300 3600
+F 0 "#PWR0102" H 4300 3350 50  0001 C CNN
+F 1 "GND" H 4305 3427 50  0000 C CNN
+F 2 "" H 4300 3600 50  0001 C CNN
+F 3 "" H 4300 3600 50  0001 C CNN
+	1    4300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3100 4600 3100
+Wire Wire Line
+	4200 3300 4300 3300
+Wire Wire Line
+	4300 3300 4300 3600
+Wire Wire Line
+	4900 3100 5050 3100
+Wire Wire Line
+	5050 3100 5050 3200
+Wire Wire Line
+	5050 3500 5050 3600
+Wire Wire Line
+	4200 3000 5050 3000
+Wire Wire Line
+	5050 3000 5050 3100
+Connection ~ 5050 3100
+$Comp
+L Device:C C2
+U 1 1 61C18D0A
+P 5650 3350
+F 0 "C2" H 5700 3450 50  0000 L CNN
+F 1 "Soil Sensor" H 5700 3250 50  0000 L CNN
+F 2 "soil:soil_sensor_no_trace" H 5688 3200 50  0001 C CNN
+F 3 "~" H 5650 3350 50  0001 C CNN
+	1    5650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 61C19781
+P 5650 3600
+F 0 "#PWR0103" H 5650 3350 50  0001 C CNN
+F 1 "GND" H 5655 3427 50  0000 C CNN
+F 2 "" H 5650 3600 50  0001 C CNN
+F 3 "" H 5650 3600 50  0001 C CNN
+	1    5650 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3500 5650 3600
+Wire Wire Line
+	5050 3100 5650 3100
+Wire Wire Line
+	5650 3100 5650 3200
 $EndSCHEMATC
